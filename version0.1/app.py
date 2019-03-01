@@ -4,7 +4,7 @@ from lib import aes
 @click.command()
 @click.argument('text', nargs=-1)
 @click.option('--encrypt/--decrypt', '-e/-d')
-@click.option('--key', '-k', default=1, type = click.STRING)
+@click.option('--key', '-k', type = click.STRING)
 def AES(text, key, encrypt):
 
     import cliaes
